@@ -7,15 +7,32 @@
 
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button_section2"
+        android:layout_toStartOf="@+id/button_section2"
+        android:textSize="22dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="go to section2"
+        android:text="@string/goToSection2"
         android:id="@+id/button_section2"
+        android:singleLine="false"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:singleLine="false" />
+        android:onClick="onButtonLoginClick"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uName"
+        android:layout_marginTop="40dp"
+        android:hint="Username"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/uname_variable" />
 
 </RelativeLayout>
