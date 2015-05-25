@@ -2,7 +2,6 @@ package example.testapp;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,9 +13,8 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 
     //meine View Elemente registrieren
-    private TextView textViewIntro;
-    private Button buttonLogin;
-    private EditText unameField;
+    private TextView tvHead;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +22,13 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         //Layout und Code bekannt machen
-        textViewIntro = (TextView) findViewById(R.id.textView);
-        buttonLogin = (Button) findViewById(R.id.button_section2);
-        unameField = (EditText) findViewById(R.id.uName);
+        tvHead = (TextView) findViewById(R.id.textViewHead);
+
+
+
+
+/*        buttonLogin = (Button) findViewById(R.id.button_section2);
+        unameField = (EditText) findViewById(R.id.uName);*/
 
         //buttonLogin.callOnClick() = onButtonLoginClick(this.vi);
         //Layout Elemente bearbeiten
@@ -38,15 +40,7 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
-    public void onButtonLoginClick(View v){
-        String text;
-       // text = (String) unameField.getText();
-        text =  unameField.getText().toString();
-        textViewIntro.setText("");
-
-    }
-
-
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -68,4 +62,5 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+*/
 }
