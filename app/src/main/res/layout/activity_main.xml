@@ -35,4 +35,14 @@
         android:layout_alignParentEnd="true"
         android:text="@string/uname_variable" />
 
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/button_section2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="76dp"
+        android:hint="test" />
+
 </RelativeLayout>
