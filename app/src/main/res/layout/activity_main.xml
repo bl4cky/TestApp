@@ -45,4 +45,14 @@
         android:layout_marginTop="76dp"
         android:hint="testPassword" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/testButton2Blacky"
+        android:id="@+id/testButtonBlacky"
+        android:layout_below="@+id/button_section2"
+        android:layout_alignLeft="@+id/button_section2"
+        android:layout_alignStart="@+id/button_section2"
+        android:layout_marginTop="15dp" />
+
 </RelativeLayout>
