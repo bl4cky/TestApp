@@ -43,6 +43,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="76dp"
-        android:hint="test" />
+        android:hint="testPassword" />
 
 </RelativeLayout>
