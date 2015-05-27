@@ -5,40 +5,35 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity implements View.OnClickListener{
+public class ToDoActivity extends ActionBarActivity implements View.OnClickListener{
 
-    //meine View Elemente registrieren
-    private TextView tvHead;
     private ImageButton iBProfil;
     private ImageButton iBToDO;
     private ImageButton iBValueAnalysis;
     private ImageButton iBHistory;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_to_do);
+
         iBProfil = (ImageButton) findViewById(R.id.imageButtonProfil);
         iBToDO = (ImageButton) findViewById(R.id.imageButtonToDo);
         iBValueAnalysis = (ImageButton) findViewById(R.id.imageButtonVA);
         iBHistory = (ImageButton) findViewById(R.id.imageButtonHistory);
 
         //Layout und Code bekannt machen
-        tvHead = (TextView) findViewById(R.id.textViewHead);
 
         iBProfil.setOnClickListener(this);
         iBToDO.setOnClickListener(this);
         iBValueAnalysis.setOnClickListener(this);
         iBHistory.setOnClickListener(this);
 
+
     }
 
-
-    //onClick listener implement methode
     @Override
     public void onClick(View v) {
         switch (v.getId()){ //switch zum identifizieren des geclickten events

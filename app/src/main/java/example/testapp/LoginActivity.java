@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -16,6 +17,7 @@ public class LoginActivity extends ActionBarActivity implements View.OnClickList
     EditText etUsername, etPassword;
     Button bLogin;
     TextView tvRegisterLink;
+    ImageView ivRegisterLink;
 
 
 
@@ -27,8 +29,11 @@ public class LoginActivity extends ActionBarActivity implements View.OnClickList
         etUsername = (EditText) findViewById(R.id.editTextUsername);
         bLogin = (Button) findViewById(R.id.buttonLogin);
         tvRegisterLink = (TextView) findViewById(R.id.textViewRegister);
+        ivRegisterLink = (ImageView) findViewById(R.id.imageViewRegister);
 
 
+        //listener muss auf class/button etc mit klassen "hören"
+        ivRegisterLink.setOnClickListener(this);
         bLogin.setOnClickListener(this);
         tvRegisterLink.setOnClickListener(this);
     }
@@ -41,6 +46,10 @@ public class LoginActivity extends ActionBarActivity implements View.OnClickList
                 break;
 
             case R.id.textViewRegister: //Register Link geklickt
+                startActivity(new Intent(this, RegisterActivity.class));
+                break;
+
+            case R.id.imageViewRegister:
                 startActivity(new Intent(this, RegisterActivity.class));
                 break;
 
