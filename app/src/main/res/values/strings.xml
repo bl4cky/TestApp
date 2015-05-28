@@ -4,7 +4,7 @@
     <string name="hello_world">Bitte melden Sie sich an... </string>
     <string name="action_settings">Settings</string>
     <string name="goToSection2">Login</string>
-    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_login">AppRilia</string>
     <string name="title_activity_register">RegisterActivity</string>
     <string name="editTextUsernameString" />
     <string name="motorcycle" > Motorcycle from DB </string>
