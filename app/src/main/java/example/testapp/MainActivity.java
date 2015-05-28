@@ -28,6 +28,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         iBHistory = (ImageButton) findViewById(R.id.imageButtonHistory);
 
         //Layout und Code bekannt machen
+
         tvHead = (TextView) findViewById(R.id.textViewHead);
 
         iBProfil.setOnClickListener(this);
